@@ -177,7 +177,7 @@ body {
   color: var(--hover-focus-link-color);
 }
 
-.menu-link::after {
+.current-page::after {
   content: "";
   position: absolute;
   display: block;
@@ -185,15 +185,9 @@ body {
   height: 4px;
   left: 0;
   bottom: 0;
-  background: #404bbf;
+  background-color: #404bbf;
   border-radius: 2px;
-  transform: scaleX(0);
-
-  transition: transform var(--transition-dur-cubic);
-}
-
-.menu-link:hover::after {
-  transform: scaleX(1);
+  bottom: -3px;
 }
 
 /* ======================= Contacts ========================*/
@@ -263,6 +257,7 @@ body {
   height: 56px;
   border: none;
   padding: 16px 32px;
+
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -311,7 +306,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 112px;
-  /* padding: 24px 100px; */
+
   background: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
@@ -374,7 +369,6 @@ body {
 
 .card-description {
   padding: 32px 0;
-  /* padding: 32px 16px; */
   text-align: center;
 }
 
